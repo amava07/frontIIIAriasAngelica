@@ -20,15 +20,18 @@ export const Form = (props) => {
         props.valueInput
     }
 
-
     return (
         <form onSubmit={handleSubmit}>
             <label>Ingresa tu nombre</label>
-            <input type="text" className={styles.form} value={valueInput} onChange={handleChange} />
+            <input type="text" className={styles.form}
+                value={valueInput}
+                onChange={handleChange} />
             <hr />
 
             <label>De cuál región de Colombia es tu café preferido? </label>
-            <input type="text" className={styles.form} value={valueInput} onChange={handleChange} />
+            <input type="text" className={styles.form}
+                value={valueInput}
+                onChange={handleChange} />
             <button type='submit'>Enviar</button>
         </form>
     );
